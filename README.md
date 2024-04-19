@@ -21,6 +21,7 @@ Using the clusterings to recursively uncross and sparsify the graph while preser
 Impressive technical achievement, resolving the long-standing question of finding a near-linear time deterministic minimum cut algorithm for the weighted case. The techniques introduced, especially constructing the sparse clustering deterministically, are likely to have further applications as well.
 
 # High-Level Architectural Diagram of Algorithm
+```
 +------------------+
 |    Input Graph   |
 +------------------+
@@ -56,8 +57,9 @@ Impressive technical achievement, resolving the long-standing question of findin
 +------------------+
 |   Minimum Cut    |
 +------------------+
+```
 
-1. Input Graph: Dfine weighted graph data structure to represent the input graph.
+1. Input Graph: Define weighted graph data structure to represent the input graph.
 2. Preprocessing: Perform any necessary preprocessing steps, such as removing parallel edges and self-loops.
 3. Clustering: Implement clustering procedures to partition the graph into clusters that preserve minimum cuts with o(1) error.
 4. Uncrossing and Sparsifying: Uncross and sparsify the graph using the clusters to reduce the graph size while preserving minimum cuts.
